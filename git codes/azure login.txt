@@ -1,0 +1,15 @@
+azure123
+
+Azure@123456
+
+
+Azureuser
+
+Azure@123456789
+
+rishitha
+
+Rishitha@123456789
+
+/home/rishitha/test/bin/gunicorn
+/home/rishitha/sample1/django_web_app/django_web_app

@@ -1,0 +1,124 @@
+sudo apt install python3-pip
+    2  sudo apt install python-pip
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  sudo apt install python-pip
+    6  sudo apt install python3-pip
+    7  
+    8  
+    9  sudo apt install python3-venv
+   10  python3 -m venv demo
+   11  source demo/bin/activate
+   12  pip install django
+   13  git clone https://github.com/Thilak1435/sample1.git
+   14  pip install gunicorn
+   15  which gunicorn
+   16  
+16  sudo apt install supervisor
+   17  
+   18  cd /etc/supervisor/conf.d/
+   19  sudo nano gunicorn.conf
+   20  cd ../../..
+   21  ls
+   22  cd ..
+   23  ls
+   24  cd home/
+   25  ls
+   26  cd azureuser/
+   27  LS
+   28  ls
+   29  cd sample1/
+   30  ls
+   31  cd django-admin 
+   32  cd django_web_app/ 
+   33  ls
+   34  cd django_web_app/
+   35  ls
+   36  pwd
+   37  cd /etc/supervisor/conf.d
+   38  sudo nano gunicorn.conf
+   39  sudo supervisorctl reread
+   
+40  sudo nano gunicorn.conf
+   41  sudo supervisorctl reread
+   42  sudo nano gunicorn.conf
+   43  sudo supervisorctl reread
+   44  sudo nano gunicorn.conf
+   45  cd ~/sample1/django_web_app/django_web_app
+   46  pwd
+   47  cd ..
+   48  ls
+   49  cd ..
+   50  ls
+   51  cd demo/
+   52  ls
+   53  cd ..
+   54  sudo nano gunicorn.conf
+   55  cd /etc/supervisor/conf.d
+   56  sudo nano gunicorn.conf
+   57  sudo supervisorctl reread
+   58  which gunicorn
+   59  cd /home/azureuser/demo/bin/gunicorn
+   6
+60  sudo nano gunicorn.conf
+   61  sudo supervisorctl reread
+   62  sudo nano gunicorn.conf
+   63  sudo supervisorctl reread
+   64  sudo supervisorctl update
+   65  sudo supervisorctl stauts
+   66  sudo supervisorctl status
+   67  cd ../../..
+   68  cd ~/sample1/django_web_app/django_web_app
+   69  cd ..
+   70  ls
+   71  sudo apt install nginx
+   72  cd /etc/nginx/sites-available
+   73  ls
+   74  cd default
+   75  sudo nano default
+   76  sudo service nginx restart
+   77  sudo service nginx stat
+v
+77  sudo service nginx status
+   78  sudo supervisorctl status
+   79  cd ~/sample1/django_web_app/django_web_app
+   80  cd..
+   81  cd ~/sample1/django_web_app/django_web_app
+   82  ls
+   83  cd ..
+   84  python manage.py makemigrations
+   85  pip install crispy-forms-govuk
+   86  pip install django-crispy-forms
+   87  pip install pillow
+   88  python manage.py makemigrations
+   89  python manage.py migrate
+   90  python manage.py runserver 0.0.0.0:8000
+   91  cd /etc/nginx/sites-available
+   92
+v92  sudo nano default 
+   93  sudo service nginx restart
+   94  sudo service nginx status
+   95  cd ~/sample1/django_web_app/django_web_app
+   96  ls
+   97  cd ..
+   98  python manage.py runserver 0.0.0.0:8000
+   99  python manage.py runserver 0.0.0.0:80
+  100* python manage.py runserver 0.0.0.
+  101  gunicorn --bind 0.0.0.0:80 project:django_web_app.wsgi.application
+  102  gunicorn --bind 0.0.0.0:81 project:django_web_app.wsgi.application
+  103  cd /etc/supervisor/conf.d
+  104  sudo nano gunic
+105  cd ~/sample1/django_web_app
+  106  gunicorn --bind 0.0.0.0:80 project:django_web_app.wsgi.application
+  107  gunicorn --bind 0.0.0.0:81 project:django_web_app.wsgi.application
+S Thilak
+11:30 AM
+[program:myproject_gunicorn]
+user=root
+directory=/var/www/django_app/
+command=/var/www/myproject/bin/gunicorn --workers 3 --bind unix:django_app.sock django_web_app.wsgi:application
+autostart=true
+autorestart=true
+		stdout_logfile=/var/log/gunicorn/gunicorn.log
+		stderr_logfile=/var/log/gunicorn/gunicorn.err.log
+keep

@@ -1,0 +1,21 @@
+git init
+  236  git branch -m master
+  237  git status
+  238  git init
+  239  git branch -m master
+  240  git status
+  241  git add Links/
+  242  git init
+  243  git branch -m master
+  244  git status
+  245  git add Capture.PNG
+  246  git add DEVOPS\ PPT.pptx
+  247  git status
+  248  git commit -m "first commit"
+  249  git add uday\ new\ veetech\ resume.docx
+  250  git add desktop.ini
+  251  git status
+  252  git commit -m "sec commit"
+  253  git log
+  254  git remote add origin https://github.
+https://github.com/Thilak1435/sample1
